@@ -3,24 +3,41 @@ html {
 }
 
 body {
+  font-family:
+    IBM Plex Sans,
+    sans-serif;
   height: 100%;
-  margin: 0;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   background-color: black;
+  max-width: 768px;
+  margin: 0 auto;
 }
 
 /* Header specific style */
 header {
   display: grid;
   grid-template-columns: auto 1fr;
-  padding: 12px;
+  padding: 36px 12px 36px;
   grid-row: 1 / 2;
+  align-self: center;
 }
 
 header a {
   grid-column-start: 1;
   grid-column-end: 2;
+}
+
+header a {
+  color: #9e9e9e;
+  font-weight: 500;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+header a:focus,  header a:hover, header a:active {
+  background-image: linear-gradient(to top,green,green .15em,transparent .15em,transparent);
+  color: white;
 }
 
 /* Footer specific styles */
@@ -62,4 +79,48 @@ nav ul li {
 #content {
   grid-row: 2 / 3;
   height: 100%;
+}
+
+#content h1, #content p, #content a:link {
+  color: white;
+  font-weight: normal;
+}
+
+#content p {
+  font-size: 18px;
+  line-height: 1.68rem;
+}
+
+#content a:link {
+  text-decoration: none;
+  font-weight: bolder;
+  background-image: linear-gradient(to top,green,green .15em,transparent .15em,transparent);
+}
+
+#content a:visited {
+  color: lightgray;
+}
+
+#content a:focus, #content a:hover, #content a:active {
+  color: green;
+  background-image: none;
+}
+
+#content #trackit:link, #content #trackit:visited {
+  background-image: linear-gradient(to top,red,red .15em,transparent .15em,transparent);
+}
+
+
+#content #trackit:focus, #content #trackit:hover, #content #trackit:active {
+  color: red;
+  background-image: none;
+}
+
+#content #epitech:link, #content #epitech:visited {
+  background-image: linear-gradient(to top,dodgerblue,dodgerblue .15em,transparent .15em,transparent);
+}
+
+#content #epitech:focus, #content #epitech:hover, #content #epitech:active {
+  color: dodgerblue;
+  background-image: none;
 }
