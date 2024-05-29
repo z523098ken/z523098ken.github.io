@@ -97,6 +97,7 @@ nav ul li {
 }
 
 #content h1,
+#content h3,
 #content p,
 #content a:link {
   color: white;
@@ -154,8 +155,8 @@ nav ul li {
   background-image: none;
 }
 
-#content #epitech:link,
-#content #epitech:visited {
+#content .epitech:link,
+#content .epitech:visited {
   background-image: linear-gradient(
     to top,
     dodgerblue,
@@ -165,9 +166,9 @@ nav ul li {
   );
 }
 
-#content #epitech:focus,
-#content #epitech:hover,
-#content #epitech:active {
+#content .epitech:focus,
+#content .epitech:hover,
+#content .epitech:active {
   color: dodgerblue;
   background-image: none;
 }
@@ -191,6 +192,48 @@ nav ul li {
   justify-content: space-between;
 }
 
+.experiences {
+  max-width: 602px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience {
+  background-color: #0c1008;
+  border: 1px solid #1f1f1f;
+  margin: 10px;
+  padding: 20px;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.experience_information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience_information h3 {
+  margin: 0 0 10px 0;
+}
+
+.experience_information p {
+  margin: 0;
+}
+
+#hothentic {
+  background-color: darkslateblue;
+  border-radius: 50%;
+}
+
 .project .information {
   max-width: 400px;
 }
@@ -205,7 +248,8 @@ nav ul li {
   color: #a1a1a1;
 }
 
-.project img {
+.project img,
+.experience img {
   width: 100px;
 }
 
@@ -213,4 +257,12 @@ nav ul li {
   border-radius: 50%;
   object-fit: cover;
   height: 100px;
+}
+
+.experience_img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+  min-width: 100px;
 }
